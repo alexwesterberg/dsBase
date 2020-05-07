@@ -9,10 +9,10 @@
 #'
 lengthDS <- function(x){
 
-  x.val <- eval(parse(text=x), envir = parent.frame())
-  
+  x.var <- eval(parse(text=x), envir = parent.frame())
+
   # find the length of the input vector or list
-  out <- length(x.val)
+  out <- length(x.var)
 
   # return output length
   return(out)
