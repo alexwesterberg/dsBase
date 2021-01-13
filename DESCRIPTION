@@ -1,7 +1,7 @@
 Package: dsBase
 Title: DataSHIELD server site base functions
 Description: DataSHIELD server site base functions.
-Version: 6.1.0-5
+Version: 6.1.1-1
 Author: DataSHIELD Developers <datashield@newcastle.ac.uk>
 Maintainer: DataSHIELD Developers <datashield@newcastle.ac.uk>
 License: GPL-3
@@ -11,10 +11,13 @@ Imports:
     RANN,
     nlme,
     stringr,
-    lme4
+    lme4,
+    dplyr,
+    reshape2
 AggregateMethods:
     asFactorDS1,
     asListDS,
+    boxPlotGGDS,
     checkNegValueDS,
     classDS,
     corTestDS,
@@ -87,6 +90,8 @@ AssignMethods:
     asMatrixDS,
     asNumericDS,
     BooleDS,
+    boxPlotGG_data_TreatmentDS,
+    boxPlotGG_data_Treatment_numericDS,
     cbindDS,
     cDS,
     changeRefGroupDS,
